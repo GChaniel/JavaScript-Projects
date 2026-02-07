@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+  </head>
+  <body>
+    <!-- Square box (paragragraph element with ID)-->
+    <p
+      id="colorBox"
+      style="
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        text-align: center;
+        line-height: 150px;
+      "
+    >
+      color Box
+    </p>
+
+    <!--Buttons-->
+    <button onclick="changeColor('Green')">Turn Green</button>
+    <button onclick="changeColor('Yellow')">Turn Yellow</button>
+
+    <!--Paragraph element with the same ID useed in JAvaScript-->
+    <p id="Button_Text">Click the button below</p>
+
+    <!--Button that calls the function-->
+    <button onclick="My_First_Function()">Click me</button>
+  </body>
+</html>
