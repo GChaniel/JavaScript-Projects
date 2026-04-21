@@ -29,7 +29,7 @@ function string_Method() {
 }
 
 //Using a toPrecision() method
-function precision_method() {
+function Precision_Method() {
   var X = 12938.3012987376112;
   document.getElementById("Precision").innerHTML = X.toPrecision(10);
 }
