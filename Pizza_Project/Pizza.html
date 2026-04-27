@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IChaniel Pizza House</title>
+    <link rel="stylesheet" href="Pizza_CSS/Pizza.css" />
+    <script src="Pizza_JS/Pizza.js" defer></script>
+  </head>
+  <body>
+    <!-- Promo Bar -->
+    <div class="promo-bar">
+      <p>
+        Weekend just got better! Enjoy 20% off all Pizzas at Ichaniel Pizza
+        House
+      </p>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#home" class="logo">IChaniel Pizza House</a>
+
+        <ul class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <!-- Scrolling background Text -->
+      <div class="marquee-text marquee-left">
+        FRESHLY BAKED • BOLD FLAVOURS • QUALITY INGREDIENTS -
+      </div>
+
+      <div class="marquee-text marquee-right">
+        HAND CRAFTED PIZZA • PREMIUM TOPPINGS • MADE WITH PASSION -
+      </div>
+
+      <img
+        src="Image/Hero-Banner.png"
+        alt="Ichaniel Pizza"
+        class="hero-image"
+      />
+
+      <a href="#build" class="primary-button">
+        <span>Build Your Pizza</span>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION-->
+    <section id="about" class="about-section">
+      <div class="about-image">
+        <img
+          src="Image/Ichaniel-pizza-house.jpg"
+          alt="Inside Ichaniel Pizza House"
+        />
+      </div>
+
+      <div class="about-content">
+        <h2>A modern take on classic pizza</h2>
+        <p>
+          At Ichaniel Pizza House, we focus on quality and flavour. From freshly
+          prepared dough to carefully selected toppings, every pizza is crafted
+          to deliver a simple, satisfying experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- CUSTOMER FAVOURITE-->
+    <section id="menu" class="favourite-section">
+      <h2>Customer Favorites</h2>
+      <p>
+        Our most loved pizzas — simple, flavourful, and made fresh every day.
+      </p>
+
+      <div class="favourite-grid">
+        <article class="food-card">
+          <img src="Image/Pepperoni.jpg" alt="Pepperoni Pizza" />
+          <div class="food-card-content">
+            <h3>Pepperoni</h3>
+            <p>
+              Loaded with melted mozzarella and generous slices of pepperoni on
+              a rich tomato base. Savoury, and satisfying.
+            </p>
+            <p class="price">£10.50</p>
+            <button
+              type="button"
+              class="buy-now"
+              data-name="Pepperoni"
+              data-price="10.50"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <img src="Image/Margherita.jpg" alt="Margherita Pizza" />
+          <div class="food-card-content">
+            <h3>Margherita</h3>
+            <p>
+              A classic favourite made with rich tomato sauce, fresh mozzarella,
+              and basil. Simple, fresh, and full of flavour.
+            </p>
+            <p class="price">£8.50</p>
+            <button
+              type="button"
+              class="buy-now"
+              data-name="Margherita"
+              data-price="8.50"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <img src="Image/BBQ-Chicken.jpg" alt="BBQ Chicken Pizza" />
+          <div class="food-card-content">
+            <h3>BBQ Chicken</h3>
+            <p>
+              Grilled chicken, smoky BBQ sauce, and melted cheese topped with
+              onions. A rich and flavourful twist on a classic.
+            </p>
+            <p class="price">£11.50</p>
+            <button
+              type="button"
+              class="buy-now"
+              data-name="BBQ Chicken"
+              data-price="11.50"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUILD ORDER SECTION -->
+    <section id="build" class="order-section">
+      <h2>Build Your Pizza</h2>
+      <p>Choose your size, crust, toppings, sides and drinks.</p>
+
+      <form id="orderForm">
+        <div class="order-grid">
+          <!-- Meat Options -->
+          <fieldset class="order-card">
+            <legend>Meat</legend>
+            <label class="order-option">
+              <span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="meat"
+                  value="Pepperoni"
+                  data-price="0"
+                />
+                Pepperoni</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">Included</span>
+            </label>
+
+            <label class="order-option">
+              <span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="meat"
+                  value="Chicken"
+                  data-price="0"
+                />
+                Chicken</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">Included</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="meat"
+                  value="spicy beef"
+                  data-price="0"
+                />
+                Spicy Beef</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">Included</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="meat"
+                  value="bbq meat feast"
+                  data-price="0"
+                />
+                BBQ Meat Feast
+              </span>
+
+              <span class="option-line"></span>
+              <span class="option-price">Included</span>
+            </label>
+          </fieldset>
+
+          <!-- Pizza Size -->
+          <fieldset class="order-card">
+            <legend>Pizza Size</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="size"
+                  value="Small Pizza"
+                  data-price="7.50"
+                />
+                Small Pizza
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£7.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="size"
+                  value="Medium Pizza"
+                  data-price="10.50"
+                />
+                Medium Pizza
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£10.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="size"
+                  value="Large Pizza"
+                  data-price="17.50"
+                />
+                Large Pizza
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£17.50</span>
+            </label>
+          </fieldset>
+
+          <!-- Crust Type -->
+          <fieldset class="order-card">
+            <legend>Crust Type</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="crust"
+                  value="Thin Crust"
+                  data-price="0.00"
+                />
+                Thin Crust
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£0.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="crust"
+                  value="Thick Crust"
+                  data-price="1.50"
+                />
+                Thick Crust
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="crust"
+                  value="Stuffed Crust"
+                  data-price="3.00"
+                />
+                Stuffed Crust</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">£3.00</span>
+            </label>
+          </fieldset>
+
+          <!-- Sauce Options -->
+          <fieldset class="order-card">
+            <legend>Sauce</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="sauce"
+                  value="Tomato Sauce"
+                  data-price="0.00"
+                />
+                Tomato Sauce</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">£0.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="sauce"
+                  value="BBQ Sauce"
+                  data-price="0.50"
+                />
+                BBQ Sauce</span
+              >
+              <span class="option-line"></span>
+              <span class="option-price">£0.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="sauce"
+                  value="Garlic Sauce"
+                  data-price="0.50"
+                />
+                Garlic Sauce</span
+              >
+
+              <span class="option-line"></span>
+              <span class="option-price">£0.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="sauce"
+                  value="No Sauce"
+                  data-price="0.00"
+                />
+                No Sauce
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£0.00</span>
+            </label>
+          </fieldset>
+
+          <!-- cheese options-->
+          <fieldset class="order-card">
+            <legend>Cheese</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="cheese"
+                  value="Regular Cheese"
+                  data-price="0.00"
+                />
+                Regular Cheese
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£0.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="cheese"
+                  value="Extra Cheese"
+                  data-price="1.50"
+                />
+                Extra Cheese
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="cheese"
+                  value="Vegan Cheese"
+                  data-price="2.00"
+                />
+                Vegan Cheese
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£2.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="radio"
+                  name="cheese"
+                  value="No Cheese"
+                  data-price="0.00"
+                />
+                No Cheese
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£0.00</span>
+            </label>
+          </fieldset>
+
+          <!-- Toppings -->
+          <fieldset class="order-card">
+            <legend>Toppings</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="toppings"
+                  value="Onions"
+                  data-price="1.00"
+                />
+                Onions
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="toppings"
+                  value="Mushrooms"
+                  data-price="1.00"
+                />
+                Mushrooms
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="toppings"
+                  value="Tomatoes"
+                  data-price="1.00"
+                />
+                Tomatoes
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="toppings"
+                  value="Peppers"
+                  data-price="1.00"
+                />
+                Peppers
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="toppings"
+                  value="Pineapple"
+                  data-price="1.00"
+                />
+                Pineapple
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+          </fieldset>
+
+          <!-- Sides -->
+          <fieldset class="order-card">
+            <legend>Sides</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="sides"
+                  value="Garlic Bread"
+                  data-price="3.50"
+                />
+                Garlic Bread
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="sides"
+                  value="Chicken Wings"
+                  data-price="5.00"
+                />
+                Chicken Wings
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£5.00</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="sides"
+                  value="Salad"
+                  data-price="4.00"
+                />
+                Salad
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£4.00</span>
+            </label>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="sides"
+                  value="potato wedges"
+                  data-price="3.50"
+                />
+                Potato Wedges
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£3.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="sides"
+                  value="Fries"
+                  data-price="3.00"
+                />
+                Fries
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£3.00</span>
+            </label>
+          </fieldset>
+
+          <!-- Drinks -->
+          <fieldset class="order-card">
+            <legend>Drinks</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="drinks"
+                  value="Coke"
+                  data-price="1.50"
+                />
+                Coke
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="drinks"
+                  value="Diet Coke"
+                  data-price="1.50"
+                />
+                Diet Coke
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="drinks"
+                  value="Sprite"
+                  data-price="1.50"
+                />
+                Sprite
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="drinks"
+                  value="Fanta"
+                  data-price="1.50"
+                />
+                Fanta
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="drinks"
+                  value="Water"
+                  data-price="1.00"
+                />
+                Water
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+          </fieldset>
+
+          <!-- extras-->
+          <fieldset class="order-card">
+            <legend>Extras</legend>
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="extras"
+                  value="Dip Pot"
+                  data-price="0.50"
+                />
+                Dip Pot
+              </span>
+
+              <span class="option-line"></span>
+              <span class="option-price">£0.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="extras"
+                  value="Extra Sauce"
+                  data-price="0.50"
+                />
+                Extra Sauce
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£0.50</span>
+            </label>
+
+            <label class="order-option"
+              ><span class="option-name"
+                ><input
+                  type="checkbox"
+                  name="extras"
+                  value="Chili Flakes"
+                  data-price="0.50"
+                />
+                Chili Flakes
+              </span>
+              <span class="option-line"></span>
+              <span class="option-price">£1.00</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="order-buttons">
+          <button type="submit">Place Order</button>
+          <button type="reset" class="cancel-btn" id="cancelOrder">
+            Cancel Order
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ORDER SUMMARY MODAL-->
+    <div class="order-modal" id="orderModal">
+      <div class="modal-content">
+        <button type="button" class="close-modal" id="closeModal">
+          &times;
+        </button>
+        <h2>Order Summary</h2>
+        <ul id="modalOrderItems"></ul>
+
+        <p class="modal-total">
+          <strong> Total:</strong>
+          <span id="modalOrderTotal">£0.00</span>
+        </p>
+
+        <button type="button" id="confirmOrder">Confirm Order</button>
+      </div>
+    </div>
+
+    <!-- CONTACT INFORMATION -->
+    <section id="contact" class="contact-section">
+      <!-- BACKGROUND SCROLLING TEXT-->
+      <div class="contact-marquee">
+        <div class="contact-marquee-track">
+          <span
+            >CONTACT ICHANIEL PIZZA HOUSE • PREMIUM TOPPINGS • MADE WITH PASSION
+            •
+          </span>
+          <span
+            >CONTACT ICHANIEL PIZZA HOUSE • PREMIUM TOPPINGS • MADE WITH PASSION
+            •
+          </span>
+        </div>
+      </div>
+      <form class="contact-form">
+        <h3>
+          Have a question or special request? Get in touch and we’ll be happy to
+          help.
+        </h3>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <input type="text" id="subject" placeholder="Subject" />
+
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+      <h2>Ichaniel Pizza House</h2>
+      <p>Fresh pizza, simple ingredients, great taste.</p>
+
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+
+      <p>© 2026 Ichaniel Pizza House. all Right Reserved.</p>
+    </footer>
+  </body>
+</html>
